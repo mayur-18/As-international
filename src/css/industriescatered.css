@@ -1,0 +1,101 @@
+.industries-container {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+.industries-header {
+    padding: 20px;
+    color: #222;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.industries-header h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.industries-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.industry-card {
+    text-align: center;
+    flex: 1 1 120px;
+    max-width: 180px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.industry-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.industry-ico img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-color: #eaf5ea;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.industry-card:hover .industry-ico img {
+    transform: scale(1.1);
+}
+
+.industry-card p {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0 0;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .industries-grid {
+        gap: 15px;
+    }
+    .industry-card {
+        flex: 1 1 45%; 
+        max-width: none;
+    }
+    .industry-ico img {
+        width: 70px;
+        height: 70px;
+    }
+    .industries-header h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .industries-grid {
+        gap: 10px;
+    }
+    .industry-card {
+        flex: 1 1 45%; 
+        max-width: none;
+    }
+    .industry-ico img {
+        width: 60px;
+        height: 60px;
+    }
+    .industries-header h2 {
+        font-size: 20px;
+    }
+}

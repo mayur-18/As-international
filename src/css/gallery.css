@@ -1,0 +1,45 @@
+h1 {
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: #B4121B;
+  font-size: 32px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.gallery-item {
+  position: relative;
+  width: 100%;
+  padding-top: 70%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.gallery-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-image {
+  transform: scale(1.05);
+}
+
+.imgo {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
