@@ -11,7 +11,7 @@ Ensure you have the following installed before setting up the project:
 
 1. Clone this repository:
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/mayur-18/As-international.git>
    cd AS-INTERNATIONAL
 
 
@@ -26,7 +26,7 @@ Ensure you have the following installed before setting up the project:
     npm run dev
 
 
-4.Open your browser and navigate to **http://localhost:5173** to view the project.
+4.Open your browser and navigate to **http://localhost:3000** to view the project.
 
 ## Available Scripts
 
