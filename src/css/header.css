@@ -82,7 +82,7 @@ body.open .imgo {
     top: 3.75rem;
     left: 0;
     width: 100%;
-    background-color: #B4121B;
+    background-color: #fff;
     display: none;
     text-align: center;
     z-index: 999;
@@ -150,6 +150,10 @@ body.open .imgo {
     .nav-list ul {
         display: none;
         gap: 0;
+    }
+    .nav-list ul li a.active::after{
+        background-color: #000000;
+        width: 90%;
     }
 
     .about {
