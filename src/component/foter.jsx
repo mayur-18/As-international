@@ -32,7 +32,7 @@ const Footer = () => {
             <Link to="#" className="iconn"><i className="fab fa-facebook"></i></Link>
             <Link to="#" className="iconn"><i className="fab fa-twitter"></i></Link>
             <Link to="#" className="iconn"><i className="fab fa-google"></i></Link>
-            <Link to="#" className="iconn"><i className="fab fa-skype"></i></Link>
+            <Link to="#" className="iconn"><i className="fab fa-instagram"></i></Link>
           </div>
         </div>
         <div className="contact-info">

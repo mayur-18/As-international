@@ -52,7 +52,8 @@ body.open .imgo {
 
 .nav-list ul li a {
     text-decoration: none;
-    color: #333;
+    color: #000000;
+    font-weight: bold;
 }
 
 .hamburger {

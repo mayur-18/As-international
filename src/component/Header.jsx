@@ -77,10 +77,18 @@ const Header = () => {
             </li>
             <li>
               <Link
-                className={`menu-item ${location.pathname === "/gallery" ? "active" : ""}`}
-                to="/gallery"
+                className={`menu-item ${location.pathname === "/services" ? "active" : ""}`}
+                to="/services"
               >
-                Gallery
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={`menu-item ${location.pathname === "/client" ? "active" : ""}`}
+                to="/client"
+              >
+                 Client
               </Link>
             </li>
             <li>
@@ -91,6 +99,7 @@ const Header = () => {
                 Contact Us
               </Link>
             </li>
+           
             <li>
               <Link
                 className={`menu-item ${location.pathname === "/jobs" ? "active" : ""}`}

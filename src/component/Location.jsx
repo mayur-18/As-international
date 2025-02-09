@@ -2,11 +2,11 @@ import React from "react";
 import "../css/Location.css";
 
     const locations = [
-        { name: "Saudi Arabia", color: "#4CAF50" }, 
-        { name: "UAE", color: "#E91E63" }, 
-        { name: "Kuwait", color: "#FF5722" }, 
-        { name: "Oman", color: "#673AB7" },
-        { name: "Qatar", color: "#9C27B0" },
+        { name: "Saudi Arabia", color: "#B4121B" }, 
+        { name: "UAE", color: "#B4121B" }, 
+        { name: "Kuwait", color: "#B4121B" }, 
+        { name: "Oman", color: "#B4121B" },
+        { name: "Qatar", color: "#B4121B" },
       ];
 
 const Locations = () => {

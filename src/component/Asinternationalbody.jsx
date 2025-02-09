@@ -1,19 +1,15 @@
 import React, { useState } from "react";
 import "../css/Asinternational.css";
+import logo from "../assets/images/logo.png";
 const Asinternational = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
-
-  const toggleContent = () => setIsExpanded(prevState => !prevState);
+  const toggleContent = () => setIsExpanded((prevState) => !prevState);
 
   return (
     <div className="consultants">
       <div className="image">
-        <img
-          src="https://via.placeholder.com/600x400"
-          alt="A.S International"
-          loading="lazy"
-        />
+        <img src={logo} alt="A.S International" loading="lazy" />
       </div>
       <div className="content">
         <h2>A.S International</h2>
@@ -27,7 +23,11 @@ const Asinternational = () => {
           className="read-more-btn"
           onClick={toggleContent}
           aria-expanded={isExpanded}
-          aria-label={isExpanded ? "Read less about A.S. International" : "Read more about A.S. International"}
+          aria-label={
+            isExpanded
+              ? "Read less about A.S. International"
+              : "Read more about A.S. International"
+          }
         >
           {isExpanded ? "Read Less" : "Read More"}
         </button>

@@ -1,0 +1,101 @@
+.industries-page {
+  display: flex;
+  flex-wrap: wrap; /* Enables wrapping for smaller screens */
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* White background */
+  color: #333333; /* Dark gray text */
+  min-height: 70vh;
+  width: 100%; /* Full width for better responsiveness */
+  padding: 20px;
+}
+.servi{
+  font-size: larger;
+  color:#b4121b;
+  margin: 20px;
+}
+
+.industry-list {
+  width: 30%; /* Adjusted width for balanced layout */
+  border: 1px solid #e0e0e0; /* Add light gray border */
+
+  padding: 10px;
+}
+
+.industry-item {
+  padding: 15px;
+  cursor: pointer;
+  border: 1px solid #e0e0e0; /* Separate items visually */
+  transition: background 0.3s, color 0.3s;
+  font-weight: 500; /* Slightly bold for better readability */
+}
+
+.industry-item:hover {
+  background-color: #f9f9f9; /* Subtle hover effect */
+}
+
+.industry-item.active {
+  background-color: #0070f3; /* Accent color for active state */
+  color: #ffffff; /* White text for better contrast */
+}
+
+.industry-description {
+  width: 40%; /* Adjusted width for description */
+  padding: 20px;
+}
+
+.industry-description h2 {
+  margin-top: 0;
+  color: #0070f3; /* Accent color for headings */
+}
+
+.industry-description p {
+  color: #555555; /* Medium gray for paragraph text */
+  line-height: 1.6; /* Improves readability */
+}
+
+
+
+.servicesimage {
+  width: 30%; /* Balanced width for the image section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.industry-image {
+  width: 100%; /* Full width for container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for aesthetics */
+}
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .industries-page {
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px; /* Reduce padding */
+    align-content: flex-start;
+    width:100% ;
+  }
+
+  .industry-list,
+  .industry-description,
+  .servicesimage {
+    width: 100%; /* Full width for all sections */
+  }
+
+  .industry-item {
+    font-size: 14px; /* Reduce font size for better fit */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .industry-description p {
+    font-size: 14px; /* Smaller font size for paragraphs */
+  }
+
+  .industry-image {
+    width: 100%; /* Use full width */
+    height: auto; /* Maintain aspect ratio */
+  }
+}

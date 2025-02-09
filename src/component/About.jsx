@@ -69,8 +69,6 @@ const About = () => {
 
                 <InfoBox />
 
-                <div className="team">
-                <TeamCard teamMembers={teamMembers} />
 
                 <div className="logo_text">
                     <div className="container">
@@ -87,6 +85,10 @@ const About = () => {
                         </div>
                     </div>
                 </div>
+
+                
+                <div className="team">
+                <TeamCard teamMembers={teamMembers} />
             </div>
         </>
     );

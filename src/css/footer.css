@@ -25,7 +25,8 @@
 .footer-logo {
   width: 8rem;
   margin-bottom: 1rem;
-  /* background-color: #fff; */
+ 
+  
 }
 
 .social-icons {
@@ -72,7 +73,9 @@
 .phone_footer:hover {
   color: #0056b3;
 }
-
+.quick-links{
+  margin: 10px;
+}
 .quick-links ul {
   list-style: none;
   padding: 0;
